@@ -13,6 +13,9 @@
 		0467F9491EFA4DCC0007E9B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0467F9471EFA4DCC0007E9B1 /* Main.storyboard */; };
 		0467F94B1EFA4DCC0007E9B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0467F94A1EFA4DCC0007E9B1 /* Assets.xcassets */; };
 		0467F94E1EFA4DCC0007E9B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0467F94C1EFA4DCC0007E9B1 /* LaunchScreen.storyboard */; };
+		0467F9591EFA4E4E0007E9B1 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 0467F9581EFA4E4E0007E9B1 /* NSString+Hash.m */; };
+		0467F95C1EFA4EAB0007E9B1 /* ZDDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0467F95B1EFA4EAB0007E9B1 /* ZDDownloadManager.m */; };
+		0467F95F1EFA4ECB0007E9B1 /* ZDSessionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0467F95E1EFA4ECB0007E9B1 /* ZDSessionModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		0467F94A1EFA4DCC0007E9B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0467F94D1EFA4DCC0007E9B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0467F94F1EFA4DCC0007E9B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0467F9571EFA4E4E0007E9B1 /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
+		0467F9581EFA4E4E0007E9B1 /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
+		0467F95A1EFA4EAB0007E9B1 /* ZDDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDDownloadManager.h; sourceTree = "<group>"; };
+		0467F95B1EFA4EAB0007E9B1 /* ZDDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDDownloadManager.m; sourceTree = "<group>"; };
+		0467F95D1EFA4ECB0007E9B1 /* ZDSessionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDSessionModel.h; sourceTree = "<group>"; };
+		0467F95E1EFA4ECB0007E9B1 /* ZDSessionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDSessionModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,7 @@
 		0467F93D1EFA4DCC0007E9B1 /* ZDDownloadManagerExample */ = {
 			isa = PBXGroup;
 			children = (
+				0467F9551EFA4E170007E9B1 /* HSDownloadManager */,
 				0467F9411EFA4DCC0007E9B1 /* AppDelegate.h */,
 				0467F9421EFA4DCC0007E9B1 /* AppDelegate.m */,
 				0467F9441EFA4DCC0007E9B1 /* ViewController.h */,
@@ -77,6 +87,27 @@
 				0467F93F1EFA4DCC0007E9B1 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0467F9551EFA4E170007E9B1 /* HSDownloadManager */ = {
+			isa = PBXGroup;
+			children = (
+				0467F9561EFA4E390007E9B1 /* MD5 */,
+				0467F95A1EFA4EAB0007E9B1 /* ZDDownloadManager.h */,
+				0467F95B1EFA4EAB0007E9B1 /* ZDDownloadManager.m */,
+				0467F95D1EFA4ECB0007E9B1 /* ZDSessionModel.h */,
+				0467F95E1EFA4ECB0007E9B1 /* ZDSessionModel.m */,
+			);
+			name = HSDownloadManager;
+			sourceTree = "<group>";
+		};
+		0467F9561EFA4E390007E9B1 /* MD5 */ = {
+			isa = PBXGroup;
+			children = (
+				0467F9571EFA4E4E0007E9B1 /* NSString+Hash.h */,
+				0467F9581EFA4E4E0007E9B1 /* NSString+Hash.m */,
+			);
+			name = MD5;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +141,7 @@
 				TargetAttributes = {
 					0467F93A1EFA4DCC0007E9B1 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 94R48RW32Q;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -151,7 +183,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0467F9461EFA4DCC0007E9B1 /* ViewController.m in Sources */,
+				0467F9591EFA4E4E0007E9B1 /* NSString+Hash.m in Sources */,
+				0467F95C1EFA4EAB0007E9B1 /* ZDDownloadManager.m in Sources */,
 				0467F9431EFA4DCC0007E9B1 /* AppDelegate.m in Sources */,
+				0467F95F1EFA4ECB0007E9B1 /* ZDSessionModel.m in Sources */,
 				0467F9401EFA4DCC0007E9B1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,9 +309,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 94R48RW32Q;
 				INFOPLIST_FILE = ZDDownloadManagerExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhouzhaodong.ZDDownloadManagerExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.benmai.4gcms;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -285,9 +322,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 94R48RW32Q;
 				INFOPLIST_FILE = ZDDownloadManagerExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhouzhaodong.ZDDownloadManagerExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.benmai.4gcms;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
